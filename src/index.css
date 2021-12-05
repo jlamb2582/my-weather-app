@@ -9,14 +9,20 @@ form {
     left: 100px;
     top: 90px;
     font-size: 15px;
+    line-height: 15px;
   }
   
   h4,
-  h5 {
+  h5,
+  h6 {
     position: relative;
     left: 400px;
     top: -70px;
     font-size: 15px;
+  }
+
+  h4 {
+  line-height: 15px;
   }
   
   .image {
@@ -54,7 +60,6 @@ form {
 
   body {
   background-color: skyblue;
-  border: 50px;
   }
 
 
