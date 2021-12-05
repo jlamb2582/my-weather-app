@@ -54,7 +54,9 @@ form {
 
   body {
   background-color: skyblue;
+  border: 50px;
   }
+
 
   .target {
   text-align: center;
