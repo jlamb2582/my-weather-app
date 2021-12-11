@@ -23,6 +23,9 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <div class ="clearfix weather temperature" id="weatherIcon">
+          <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="clear" id="icon" class="float-left">
+          </div>
         <form id="form-here">
           <div class="row">
             <div class="col-9">
@@ -35,9 +38,8 @@
           </div>
         
         </form>
-        <div class = "weatherInfo">
         <div class = "weatherForecast row">
-        <div class = "col-6" id = "column">
+        <div class = "col-5" id = "column">
         <p class="city">
           <h1 id="location">
             Raleigh
@@ -47,14 +49,23 @@
           <h3 id="date"> Tuesday 5:19pm</h3>
         </p>
         </div>
-      <div class = "col-6" id = "column">
+
+
+      <div class = "col-7" id = "column">
         <p class="information">
           <h4>Feels like: <span id= "feels-like"></span>°C</h4>
           <h5>Humidity:<span id="humidity"></span> <span>%</span></h5>
           <h6 class = "windy"> Wind: <span id ="wind"> 13 </span> km/h</h6>
         </p>
       </div>
-    </div>
+      
+
+
+      </div>
+  
+
+
+
     </div>
     </div>
     <script src = "src/index.js"> </script>
