@@ -55,20 +55,4 @@ function submitForm(event) {
 let formSearch = document.querySelector("#form-here");
 formSearch.addEventListener("click", submitForm);
 
-function findLocation(position) {
-  let longitude = position.coords.longitude;
-  let latitude = position.coords.latitude;
-  let apiKey = "52497c6b69bb4648be92f1f0807d9c4d";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayInfo);
-}
-
-function showCurrent(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(findLocation);
-}
-
-let currentButton = document.querySelector("#current-location");
-currentButton.addEventListener("click", showCurrent);
-
 searchCity("New York");

@@ -25,45 +25,43 @@
       <div class="weather-app">
         <form id="form-here">
           <div class="row">
-            <div class="col-5">
+            <div class="col-9">
             <input type="search" placeholder="enter city here" class="form-control" autofocus="on" id="search-text"/>
             </div>
-          <div class="col-3">
-            <button type="button" class="btn btn-success" id="current-location">Current</button>
-          </div>
+  
             <div class ="col-3">
-            <input type="submit" value ="search" class="form-control btn btn-primary"/>
+            <input type="submit" value ="search" class="form-control btn btn-primary w-100" id ="searchButton"/>
             </div>
           </div>
         
         </form>
-    
-        <div class="city">
+        <div class = "weatherInfo">
+        <div class = "weatherForecast row">
+        <div class = "col-6" id = "column">
+        <p class="city">
           <h1 id="location">
             Raleigh
         </h1>
           <h2 id="forecast"> <span id ="temp"></span>°C
           </h2>
           <h3 id="date"> Tuesday 5:19pm</h3>
+        </p>
         </div>
-      
-
-        <img src = Images/cloud.png width="100" class="image" />
-
-        <div class="information">
+      <div class = "col-6" id = "column">
+        <p class="information">
           <h4>Feels like: <span id= "feels-like"></span>°C</h4>
           <h5>Humidity:<span id="humidity"></span> <span>%</span></h5>
           <h6 class = "windy"> Wind: <span id ="wind"> 13 </span> km/h</h6>
-          
-        </div>
-
-        </div>
+        </p>
       </div>
+    </div>
+    </div>
     </div>
     <script src = "src/index.js"> </script>
   </body>
-  <p class = "target">
-  <a target ="blank" href="https://github.com/jlamb2582/my-weather-app">Open Source Code,</a>by Jessica Lamb
- </p>
+
+  <footer>
+  <a target ="blank" href="https://github.com/jlamb2582/my-weather-app">Open Source Code </a>by Jessica Lamb
+  </footer>
 </div>
 </html>
