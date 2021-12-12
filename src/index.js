@@ -25,6 +25,7 @@ if (minutes < 10) {
 h3.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayInfo(response) {
+  console.log(response.data);
   document.querySelector("#location").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
@@ -44,6 +45,9 @@ function displayInfo(response) {
 
   iconElement.setAttribute("src" , `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
+  let descriptionElement = document.querySelector("#description");
+
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function searchCity(city) {
