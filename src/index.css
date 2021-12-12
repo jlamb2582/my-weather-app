@@ -6,27 +6,34 @@ form {
   h2,
   h3 {
     text-align:left;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 15px;
   }
 
   h1 {
   text-align: left;
+  margin-bottom: 8px;
   }
   
   h4,
   h5,
   h6 {
     text-align: right;
+    font-size: 16px;
+    font-style:italic;
+
   }
 
   h4 {
   line-height: 15px;
   }
+
+  h5 {
+  margin-bottom: 5px;
+  }
   
   
   .weather-app {
-    max-width: 100%;
     font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
     padding: 20px 20px;
   }
@@ -84,6 +91,7 @@ form {
   #location {
   font-weight: bold;
   color: rgb(236, 118, 138);
+  font-style: italic;
   }
 
   #searchButton {
@@ -94,10 +102,6 @@ form {
 
   #weatherIcon { 
     box-sizing: border-box;
-    height: 64px;
-    line-height:24px;
-    text-size-adjust:100%;
-    justify-content: flex-end;
   }
 
 
@@ -105,3 +109,29 @@ form {
   position: relative;
   top: -30px;
   }
+  
+  #form-here {
+   margin-bottom: 30px;
+  }
+
+  #celcius-link {
+  text-decoration: none;
+  color:rgb(236, 118, 138);
+  }
+
+  #fahrenheit-link {
+  text-decoration: none;
+  color:rgb(236, 118, 138);
+  }
+
+  #fahrenheit-link:hover {
+  color: blue;
+  }
+
+  #celcius-link:hover {
+    color: blue;
+    }
+   
+    #weatherInformation {
+    margin-bottom: 12px;
+    }
