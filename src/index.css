@@ -143,3 +143,23 @@ form {
     #description {
     text-transform: capitalize;
     }
+
+    .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    .weather-date {
+    font-size: 16px;
+    color:rgb(236, 118, 138);
+    }
+
+    .weather-units {
+    font-size: 13px;
+    color:rgb(236, 118, 138);
+    }
+
+    .weather-units-min {
+    opacity: 0.8;
+
+    }
