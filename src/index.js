@@ -132,7 +132,7 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
 let celsiusTemperature = null;
 let formSearch = document.querySelector("#form-here");
-formSearch.addEventListener("click", submitForm);
+formSearch.addEventListener("submit", submitForm);
 
 
 
